@@ -100,7 +100,7 @@ public class FinalGameManager : MonoBehaviour {
 		Health = HEALTH_MAX;
 
 //		ll = levelLoader.GetComponent<LevelLoader> ();
-		GameObject capsule = Instantiate (Resources.Load ("Prefab/Capsule")) as GameObject;
+		//GameObject walls = Instantiate (Resources.Load ("Prefab/Walls")) as GameObject;
 	}
 
 // Update is called once per frame
@@ -110,10 +110,10 @@ public class FinalGameManager : MonoBehaviour {
 		if (health <= 0){
 
 			LevelNum++;
-			ReloadScene ();
+			//ReloadScene ();
 		}
 
-		healthText.text = health.ToString ();
+		//healthText.text = health.ToString ();
 	//if the damageKey was pressed
 		if(Input.GetKeyDown(damageKey)){
 			//damage the ship by using the property "Health"
@@ -129,10 +129,10 @@ public class FinalGameManager : MonoBehaviour {
 
 	}
 
-	public void ReloadScene(){
-	SceneManager.LoadScene ("aa5270_CodeLab1_Midterm");
+//	public void ReloadScene(){
+//	SceneManager.LoadScene ("aa5270_CodeLab1_Midterm");
 		
-	}
+
 
 
 }

@@ -67,7 +67,8 @@ public class LevelLoader : MonoBehaviour {
 						xPos + offsetX, 
 						yPos + offsetY, 
 						0);
-					capsule.transform.localScale = new Vector3 (1.2f, 0.5f, 1f);
+					capsule.transform.localScale = new Vector3 (0.2f, 0.2f, 0.2f);
+
 
 				} 
 /*				if(line[xPos] == 'P'){ // we see a 'P'
@@ -89,14 +90,14 @@ public class LevelLoader : MonoBehaviour {
 
 	// Update is called once per frame
 //	void Update () {
-//		Debug.Log ("LevelNum: " + levelNum);
-//		//If someone presses the "P"
+////		Debug.Log ("LevelNum: " + levelNum);
+////		//If someone presses the "P"
 //		if(Input.GetKeyDown(KeyCode.P)){
-//			//Increase the level by 1
-//			levelNum++;
-//			//Reload the scene "Week5", but a new level will appear
-//			//because we increased the level number
-//			SceneManager.LoadScene("Week5");
+////			//Increase the level by 1
+//			//LevelNum++;
+////			//Reload the scene "Week5", but a new level will appear
+////			//because we increased the level number
+//		SceneManager.LoadScene("Final_02");
 //		}
 //	}
 //	public void IncreaseLevel(){
